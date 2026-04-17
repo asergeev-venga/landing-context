@@ -1,0 +1,31 @@
+---
+description: Keep motion recipe line references in sync
+alwaysApply: true
+---
+
+# Motion Reference Line Sync
+
+When editing `examples/motion-recipes.example.tsx`, always update line references in `context/06-motion-guidelines.md` in the same task.
+
+Requirements:
+
+- Keep each recipe reference accurate:
+  - Recipe 1 -> `MotionHeroExample`
+  - Recipe 2 -> `MotionFeatureListExample`
+  - Recipe 3 -> `MotionModalExample`
+  - Recipe 4 -> `MotionButtonExample`
+  - Recipe 5 -> `SsrSafeFadeExample`
+- Keep shared constants references accurate:
+  - `EASE_STANDARD`
+  - `heroVariants`
+  - `listContainerVariants`
+  - `listItemVariants`
+- If line ranges changed due to edits, update the ranges immediately.
+- If a recipe export is renamed, added, removed, or reordered, update mapping text and ranges accordingly.
+- Never leave stale line references in `context/06-motion-guidelines.md`.
+
+Verification before completion:
+
+1. Re-read `examples/motion-recipes.example.tsx`.
+2. Re-read `context/06-motion-guidelines.md`.
+3. Confirm every referenced range points to the intended export/constant.

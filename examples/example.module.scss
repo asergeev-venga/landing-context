@@ -1,0 +1,98 @@
+@use '@/styles/vars' as *;
+
+.heroRoot {
+  background: $white-base;
+  border-radius: 32px;
+  padding: 56px;
+
+  @include media(mobile) {
+    padding: 24px;
+  }
+}
+
+.heroTitle {
+  @include text-h1-v2;
+  color: $black-base;
+}
+
+.heroSubtitle {
+  @include text-body-l-v2;
+  color: $black-second;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.cardsRoot {
+  padding: 56px 0;
+}
+
+.cardsTitle {
+  @include text-h2-v2;
+  color: $black-base;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+
+  @include media(mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cardItem {
+  background: $white-second;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.cardTitle {
+  @include text-h4-v2;
+  color: $black-base;
+}
+
+.cardDescription {
+  @include text-body-m-v2;
+  color: $black-second;
+  margin-top: 8px;
+}
+
+.ctaRoot {
+  background: $black-base;
+  border-radius: 32px;
+  padding: 40px;
+}
+
+.ctaTitle {
+  @include text-h3-v2;
+  color: $white-base;
+}
+
+.ctaText {
+  @include text-body-m-v2;
+  color: $white-third;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.formRoot {
+  display: grid;
+  gap: 12px;
+  width: min(100%, 460px);
+}
+
+.formLabel {
+  @include text-body-s-v2;
+  color: $black-second;
+}
+
+.formInput {
+  @include text-body-m-v2;
+  background: $white-base;
+  border: 1px solid $white-third;
+  border-radius: 14px;
+  color: $black-base;
+  padding: 12px 16px;
+}
